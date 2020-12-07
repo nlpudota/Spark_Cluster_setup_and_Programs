@@ -1,0 +1,11 @@
+spark-class org.apache.spark.deploy.master.Master
+
+spark-class org.apache.spark.deploy.worker.Worker spark://192.168.56.1:7077
+
+spark-shell2.cmd -i c:/hadoop/word_count_cluster.scala --master spark://192.168.56.1:7077
+
+spark-shell2.cmd -i c:/hadoop/standa.scala
+
+spark-shell2.cmd -i c:/hadoop/word_count.scala
+
+spark-shell2.cmd -i c:/hadoop/standa.scala --master spark://192.168.56.1:7077
